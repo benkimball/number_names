@@ -65,7 +65,7 @@ class Converter
           break
         else
           case place
-          when 3 then words.push digit(d) + " hundred"
+          when 3 then words.push digit(d) + " " + hundred
           when 2 then words.push ten(d)
           when 1 then words.push digit(d)
           end
@@ -80,6 +80,10 @@ class Converter
 
     def zero
       @dictionary['zero']
+    end
+
+    def hundred
+      @dictionary['hundred']
     end
 
     def digit(index)

@@ -33,6 +33,7 @@
     - "seventy"
     - "eighty"
     - "ninety"
+  hundred: "hundred"
   groups:
     - ~
     - "thousand"
